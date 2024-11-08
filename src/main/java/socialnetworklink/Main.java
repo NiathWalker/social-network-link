@@ -2,11 +2,12 @@ package socialnetworklink;
 
 import arc.Core;
 import arc.Events;
-import arc.util.*;
+import arc.util.CommandHandler;
+import arc.util.Log;
 import mindustry.game.EventType;
 import mindustry.gen.Call;
 import mindustry.gen.Player;
-import mindustry.mod.*;
+import mindustry.mod.Plugin;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -30,7 +31,7 @@ public class Main extends Plugin {
                             data.append("social-network-link-at-join-for-admins=false").append("\n");
                             data.append("social-network-link-command-toggle=true").append("\n");
                             data.append("social-network-link-command-name=link").append("\n");
-                            data.append("social-network-link-command-description=Get a link to social network.").append("\n");
+                            data.append("social-network-link-command-description=Get a link to social network.");
 
                             writer.write(data.toString());
                         }
