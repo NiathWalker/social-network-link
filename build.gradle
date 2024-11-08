@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'socialnetworklink'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation files('libs/mindustry.jar')
+}
+
+test {
+    useJUnitPlatform()
+}
